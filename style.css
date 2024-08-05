@@ -1,0 +1,176 @@
+html {
+    text-align: center;
+    font-family: Raleway;
+    background: black;
+    color: white;
+}
+
+header {
+    position: relative;
+    
+    height: 605px; /* Altura do header */
+    overflow: hidden; /* Garante que o conteúdo não ultrapasse os limites */
+    
+    
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; height: 100%;
+    background-image: url('/fotos/banner.png');
+    background-size: 110%; /* Ajusta a imagem para cobrir o header */
+    background-position: left top; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Não repete a imagem */
+    opacity: 0.1;
+    z-index: -1;
+    background-position: 50% +50%;
+    filter: grayscale(100%);
+}
+
+header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0, 29, 46, 0.6) 0%, rgba(0, 155, 221, 0.2) 50%, rgba(0,0,0,1) 100%);
+    z-index: -2;
+    }
+    .header-content {
+        position: relative;
+        z-index: 1; /* Garante que o conteúdo fique acima da sobreposição e da imagem de fundo */
+    }
+    
+@font-face {
+    font-family: Raleway; 
+    src: url("static/Raleway-Regular.ttf");
+    }
+
+    @font-face {
+        font-family: Raleway-Extrabold; o 
+        src: url("static/Raleway-ExtraBold.ttf");
+        }
+     
+h1 {
+    font-family: Raleway-Extrabold;   
+    font-size: 40px;
+    font-weight: 900;
+    background: linear-gradient(to bottom, #33A8DB, #1472B7);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-style: solid;
+    border-width: 2px 2px;
+    border-color: #33A8DB; 
+    display: inline-block;
+    }
+
+p {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1 + p {
+    font-size: 20px;
+    max-width: 515px;
+    margin: 0 auto;
+    
+}
+
+h2 { 
+    font-family: Raleway-Extrabold;   
+    font-size: 40px;
+    font-weight: 900;
+    background: linear-gradient(to bottom, #33A8DB, #1472B7);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+span {
+    color:rgba(51, 168, 219, 1);
+}
+
+button {
+    font-size: 16px;
+    background: linear-gradient(to bottom, #33A8DB, #1472B7);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-style: solid;
+    border-width: 2px 2px;
+    border-image: linear-gradient(to bottom, #33A8DB, #1472B7) 1;
+    display: inline-block;
+    padding: 16px 32px;
+    cursor: pointer;
+}
+
+.module {
+    font-size: 16px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px 2px;
+    border-image: linear-gradient(to bottom, #33A8DB, #1472B7) 1;
+    display: inline-block;
+    cursor: pointer;
+    width: auto;
+    background-color: #8b8a8a; /* Cor de fundo cinza */
+    margin: 10px;
+    padding: 16px 32px;
+    box-sizing: border-box;
+    width: 27vw;
+    
+}
+
+.modules-list {
+    text-align: center; /* Centraliza horizontalmente os botões no container */
+    display: flex;
+    flex-direction: column; /* Empilha os botões verticalmente */
+    align-items: center;
+}
+#transform-world {
+    position: relative;
+    height: 500px; /* Define uma altura para a section, ajuste conforme necessário */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Alinha o conteúdo horizontalmente à esquerda */
+    padding: 0 130px; /* Adiciona um espaço interno para o texto não colar nas bordas */
+    overflow: hidden; /* Garante que o conteúdo não ultrapasse os limites */
+}
+
+#transform-world::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/fotos/foto.jpeg');
+    background-size: cover; /* Ajusta a imagem para cobrir toda a área da section */
+    background-position: center; /* Centraliza a imagem na área da section */
+    background-repeat: no-repeat;/* Evita a repetição da imagem */
+    background-attachment: fixed; /* Mantém a imagem de fundo fixa enquanto o usuário rola */
+    opacity: 0.6; /* Define a opacidade da imagem */
+    z-index: -1; /* Garante que a imagem fique atrás do texto */
+}
+
+#transform-world p {
+    font-family: Raleway-Extrabold;  
+    font-size: 40px; /* Ajusta o tamanho da fonte do texto */
+    margin: 0;
+    max-width: 280px;
+    text-align: left;
+    color: white; /* Define a cor do texto */
+    text-shadow: 3px 2px 0px rgba(51, 168, 219, 1); /* Adiciona sombra azul ao texto */
+}
+
+#professional-challenges h2 {
+    font-family: Raleway-Extrabold;  
+    font-size: 40px; /* Ajusta o tamanho da fonte */
+    text-align: center; /* Alinha o texto dentro do elemento h2 */
+    max-width: 900px; /* Define a largura máxima do elemento */
+    margin: 0 auto; /* Centraliza o h2 horizontalmente no contêiner pai */
+    display: block; /* Garante que o elemento seja tratado como um bloco */
+    /* Remove display: flex; se você não estiver usando flexbox no contêiner pai */
+}
